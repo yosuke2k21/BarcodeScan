@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+body{
+	background:#2F4F4F;
+	font-size:12px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+/*タイトル名*/
+h1 {
+	position: relative;
+	padding: 1em 0;
+  text-align: center;
+  color: white;
+  font-size: 35px
+}
+h1::before,
+h1::after {
+	position: absolute;
+	left: 19%;
+	content: '';
+	width: 60%;
+	height: 6px;
+	box-sizing: border-box;
+}
+h1::before {
+	top: 0;
+	border-top: 2px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+h1::after {
+	bottom: 0;
+	border-top: 1px solid #ccc;
+	border-bottom: 2px solid #ccc;
+}
+
+/*読み取り履歴ページのリンク*/
+h2{
+	position: relative;
+	padding: 1em 0;
+  text-align: center;
+  font-size: 25px
+}
+
+/*商品名*/
+h3{
+  color:#008C8C;
+  border-bottom:#008C8C dotted 1px;
+  margin:10px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+/*ボタンの位置*/
+div.button{
+	text-align: center;
+}
+
+.Layout{
+  background: none repeat scroll 0 0 #FFFFFF;
+  border: 5px solid #BBBBBB;
+  display: inline-block;
+  /*float: left;*/
+  margin: 5px;
+  padding: 10px 10px 10px;
+  width: 180px;
+  text-align: center;
+}
+
+.Layout .btn-action img{
+	transition:box-shadow 1.0s ease-in-out;
+	box-shadow: none;
+
+}
+.Layout .btn-action a.animate{
+	box-shadow:0px 0px 12px 12px rgba(117, 180, 196, 1.0);
+}
+.Layout  a:hover p {   /*上に乗ったら*/
+	color: #669A70;
+}
+
+#wrap{
+  text-align:center;
+  padding-top:20px;
+}
+
+.tiles_2{
+  width:100%;
+  text-align:center;
+  margin:0 auto;
+  clear:both;
+  overflow: hidden;
+}

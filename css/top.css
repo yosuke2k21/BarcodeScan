@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/*値の初期化*/
+html, body, div, h1, h2, h3, h4, h5, h6, p,  a, img, s,  var,  textarea, legend, article,  {
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	margin: 0;
+	padding: 0;
+	vertical-align:baseline;
+}
+
+/*リンクの下線を消す*/
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.clear {
+	overflow: hidden;
+	zoom: 1;
+}
+
+/* shortcut */
+.shortcut {
+	border-bottom: solid 1px #e3e3e3;
+}
+.shortcut li  {
+	float: left;
+	width: 50%;
+}
+
+.shortcut li a {
+	display: block;
+	padding: 30px 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+}
+
+/*favoriteページボタンの位置*/
+.first{
+  position:relative;
+}
+
+.first img{
+  margin-top: 35%;
+}
+
+.first .btn-action img{
+	transition:box-shadow 0.6s ease-in-out;
+	box-shadow: none;
+
+}
+.first .btn-action img.animate{/*画像の周りに色を付ける*/
+	box-shadow:0px 0px 12px 12px rgba(117, 180, 196, 1.0);
+}
+
+/*rirekiページボタンの位置*/
+.second{
+  position: relative;
+}
+
+.second img{
+  margin-top: 35%
+}
+
+.second .btn-action img{
+	transition:box-shadow 0.6s ease-in-out;
+	box-shadow: none;
+
+}
+.second .btn-action img.animate{
+	box-shadow:0px 0px 12px 12px rgba(117, 180, 196, 1.0);
+}
+
+.shortcut li img { /*  画像を丸く*/
+	border-radius: 50%;
+
+
+}
+.shortcut li p {
+	margin: 20px 0 0 0;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #000;
+}
+.shortcut li a:hover p {   /*上に乗ったら*/
+	color: #8ac2d0;
+}
+.shortcut li a:active p { /* クリック時に起こる*/
+	color: #75b4c4;
+}

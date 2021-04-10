@@ -1,0 +1,66 @@
+html{
+  height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	display: table;
+}
+
+body{
+  background:#2F4F4F;
+  min-height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+/*リンク下線無し*/
+a{
+  text-decoration: none;
+}
+
+/*リンク文字の色を白にする*/
+.Link{
+  color: white;
+}
+
+img{
+  width: 100%;
+}
+
+/* ボタンのスタイル */
+div.button{
+  text-align: center;
+}
+
+button.button {
+  background: #1e3333;
+  border: 1px solid #DDD;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  color: #FFF;
+  width: 200px;
+  height: 90px;
+  padding: 10px 0;
+  font: bold large/150% "ＭＳ 明朝";
+  font-size: 22px;
+}
+
+button.button:hover {
+  background-color:#4F6F6F;
+
+}
+button.button:active {
+  position:relative;
+  top:1px;
+}
+
+/*検索結果が出ないときのCSS*/
+div.error{
+  max-width:100%;
+  text-align:center;
+  margin:20px ;
+  padding:20px ;
+  background:white;
+}
